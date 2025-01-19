@@ -65,6 +65,7 @@ public class SpinGameManager : MonoBehaviour
             Debug.Log(accountAddress);
             accountAddress = accountAddress.Substring(0, 5) + "..." + accountAddress.Substring(accountAddress.Length - 3, 3);
             _yourWalletText.text = "Your Wallet\r\n" + accountAddress;
+            _yourWalletText.gameObject.SetActive(true);
             _connectButton.gameObject.SetActive(false);
             _buySpinButton.gameObject.SetActive(true);
             _buySpinButton.interactable = !_spinWheel.IsSpinning();
