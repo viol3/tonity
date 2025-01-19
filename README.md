@@ -33,10 +33,10 @@
 
 ## Key Features
 
-* Connecting to any TON-compatible wallet with responsible TON Connect UI.
-* Proceeding transactions without leaving game app.
+* Connects to any TON-compatible wallet with responsible TON Connect UI.
+* Proceeds transactions without leaving game app.
 * Supports any platform includes Telegram Mini Apps that can run WebGL and Javascript.
-* Testnet support
+* Supports test-net
 * Samples; A basic UI and Fortune Wheel mechanic.
 
 ## How To Use
