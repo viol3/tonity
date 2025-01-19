@@ -24,7 +24,7 @@ public class SpinWheel : MonoBehaviour
         if (_spinning)
         {
             _spinRect.localEulerAngles += Vector3.forward * _spinAmount * Time.deltaTime;
-            _spinAmount -= Time.deltaTime * _spinDecrease;
+            _spinAmount -= Time.deltaTime * _spinDecrease * Random.Range(0.1f, 1.8f);
             if (_spinAmount <= 0f)
             {
                 _spinning = false;

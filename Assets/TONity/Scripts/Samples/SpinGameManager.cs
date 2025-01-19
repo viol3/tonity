@@ -21,6 +21,17 @@ public class SpinGameManager : MonoBehaviour
         _spinWheel.OnSpinCompleted += SpinWheel_OnSpinCompleted;
     }
 
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            _spinWheel.Spin();
+            _buySpinButton.interactable = false;
+        }
+#endif
+    }
+
     private void SpinWheel_OnSpinCompleted()
     {
         UpdateUI();
