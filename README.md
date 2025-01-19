@@ -33,10 +33,10 @@
 
 ## Key Features
 
-* Connecting to any TON-compatible wallet with responsible TON Connect UI.
-* Proceeding transactions without leaving game app.
+* Connects to any TON-compatible wallet with responsible TON Connect UI.
+* Proceeds transactions without leaving game app.
 * Supports any platform includes Telegram Mini Apps that can run WebGL and Javascript.
-* Testnet support
+* Supports test-net
 * Samples; A basic UI and Fortune Wheel mechanic.
 
 ## How To Use
@@ -46,8 +46,23 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [U
 ```bash
 # Clone this repository
 $ git clone https://github.com/viol3/tonity
-
 ```
+
+Drag-drop Tonity prefab into your starter scene and in any script, you can start to connect by calling:
+
+```csharp
+// Connect to wallet
+$ Tonity.Instance.ConnectWallet()
+```
+
+To send TON to another wallet:
+
+```csharp
+// Connect to wallet
+$ Tonity.Instance.TransferTon("[WALLET_ADDRESS]", [AMOUNT IN FLOAT], "[COMMENT]");
+```
+
+If you want to deploy the game into Telegram Mini Apps, you need to setup a manifest.json file such as "WebGL Templates/Tonity/manifest.json". After you uploaded the web files into your hosting, you need to paste your manifest.json link(it should be accessible globally) into index.html file, line 32.
 
 ## Download
 
