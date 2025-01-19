@@ -73,7 +73,7 @@ This software uses the following packages and assets:
 
 ## License
 
-MIT
+You need to give me a place in your credits page. Allowed to use in any commercial or non-commercial projects. We are not responsible for any damage that may occur while using this project.
 
 ---
 
